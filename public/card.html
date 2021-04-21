@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <link rel="stylesheet" href="../fonts/css/all.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+        }
+        body {
+            font-family: sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 95%;
+            margin: 50px auto;
+            padding: 50px;
+            background-color: rgba(128, 128, 128, 0.753);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .container .card {
+            width: 100%;
+            max-width: calc(100% / 3 - 20px);
+            min-height: 200px;
+            margin: 0px 10px 10px 0;
+            padding: 10px;
+            background-color: white;
+            position: relative;
+            display: grid;
+            align-items: flex-start;
+        }
+        .card .card_head {
+            display: grid;
+            grid-template-columns: 80px auto;
+            gap: 10px;
+        }
+        .card_head .img {
+            background-color: teal;
+            display: inline-grid;
+            align-items: center;
+            text-align: center;
+            font-size: 35px;
+        }
+        .card_head .title h3 {
+            font-weight: 500;
+        }
+        .card_head .title .sub_title {
+            font-size: 14px;
+            color: gray;
+            margin: 5px 0;
+            display: block;
+        }
+        .title .rat {
+            color: green;
+        }
+
+        .card .card_body {
+            padding: 5px 0;
+            margin: 15px 0;
+            font-size: 15px;
+            height: 80px;
+            overflow-y: auto;
+            font-weight: 600;
+            font-family: serif;
+            letter-spacing: 0.5px;
+        }
+
+        .card .card_foot {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+            font-size: 15px;
+        }
+        .card_foot .qut {
+            font-size: 13px;
+            color: gray;
+        }
+        .card_foot .act {
+            color: royalblue;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-weight: 600;
+        }
+        /* Icons property */
+        #str {
+            background-color: skyblue;
+            color: white;
+            -webkit-text-stroke: 1px gray;
+        }
+        #mailc {
+            background-color: gold;
+        }
+        #drop {
+            background-color: rgb(101, 137, 247);
+            color: white;
+        }
+        #shop {
+            background-color: cyan;
+        }
+        #atl {
+            background-color: rgba(159, 250, 159, 0.767);
+            color: white;
+            -webkit-text-stroke: 2px cornflowerblue;
+        }
+        #sale {
+            background-color: lightsteelblue;
+            color: royalblue;
+            /* -webkit-text-stroke: 1px black; */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <div class="card_head">
+                <div class="img" id="str">
+                    <span class="fab fa-stripe-s"></span>
+                </div>
+                <div class="title">
+                    <h3>Stripe</h3>
+                    <span class="sub_title">Payment Services</span>
+                    <div class="rat">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card_body">
+                <p>Git needs you to type in a message. Git uses your system’s default editor.</p>
+            </div>
+
+            <div class="card_foot">
+                <span class="qut">Installed 722 times</span>
+                <a href="#" class="act">view &gt;</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_head">
+                <div class="img" id="mailc">
+                    <span class="fab fa-mailchimp"></span>
+                </div>
+                <div class="title">
+                    <h3>Mailchimp</h3>
+                    <span class="sub_title">Project Management</span>
+                    <div class="rat">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card_body">
+                <p>Now that your identity is set up, you can configure the default text editor that will be used.</p>
+            </div>
+
+            <div class="card_foot">
+                <span class="qut">Installed 122 times</span>
+                <a href="#" class="act">view &gt;</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card_head">
+                <div class="img" id="drop">
+                    <span class="fab fa-dropbox"></span>
+                </div>
+                <div class="title">
+                    <h3>Dropbox</h3>
+                    <span class="sub_title">File Management</span>
+                    <div class="rat">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card_body">
+                <p>If not configured, Git uses your system’s default editor.</p>
+            </div>
+
+            <div class="card_foot">
+                <span class="qut">Installed 1742 times</span>
+                <a href="#" class="act">view &gt;</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card_head">
+                <div class="img" id="shop">
+                    <span class="fab fa-shopify"></span>
+                </div>
+                <div class="title">
+                    <h3>Shopify</h3>
+                    <span class="sub_title">Ecommerce</span>
+                    <div class="rat">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card_body">
+                <p>If not configured, Git uses your system’s default editor.</p>
+            </div>
+
+            <div class="card_foot">
+                <span class="qut">Installed 722 times</span>
+                <a href="#" class="act">view &gt;</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card_head">
+                <div class="img" id="atl">
+                    <span class="fab fa-atlassian"></span>
+                </div>
+                <div class="title">
+                    <h3>Atlassian</h3>
+                    <span class="sub_title">Project Management</span>
+                    <div class="rat">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card_body">
+                <p>If not configured, Git uses your system’s default editor.</p>
+            </div>
+
+            <div class="card_foot">
+                <span class="qut">Installed 345 times</span>
+                <a href="#" class="act">view &gt;</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card_head">
+                <div class="img" id="sale">
+                    <span class="fab fa-salesforce"></span>
+                </div>
+                <div class="title">
+                    <h3>Salesforce</h3>
+                    <span class="sub_title">Project Management</span>
+                    <div class="rat">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card_body">
+                <p>Now that your identity is set up, you can configure the default text editor that will be used.</p>
+            </div>
+
+            <div class="card_foot">
+                <span class="qut">Installed 352 times</span>
+                <a href="#" class="act">view &gt;</a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
